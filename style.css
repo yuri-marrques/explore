@@ -1,0 +1,341 @@
+:root{
+    font-size: 62.5%;
+
+    --primary-text: #B52184;
+    --support-text: #312D64;
+    --primary-bg: #F9F4FB;
+    --secundary-bg: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Mulish', sans-serif;
+
+}
+
+/*Explore sem limites*/
+
+body{
+    background: var(--primary-bg);
+}
+
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.main-image{
+    display: flex;
+    justify-content: center;
+}
+
+.main-image img{
+    width: 37.5rem;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 2rem;
+}
+
+.title h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--primary-text);
+}
+
+.title p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--support-text);
+    margin-bottom: 3.5rem;
+}
+
+.title img{
+    margin-bottom: 9rem;
+}
+
+/*cards*/
+
+section{
+    display: grid;
+    justify-content: center;
+
+    gap: 5rem;
+
+    padding: 5.5rem 11.1rem;
+
+    background: var(--secundary-bg);
+    
+    
+    
+}
+
+
+.card{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 2.65rem;
+    text-align: left;
+
+    width: 100%;
+    height: 100%;
+}
+
+.card img{
+    margin-bottom: 4rem;
+}
+
+
+.card h1{
+    color: var(--primary-text);
+    font-weight: 900;
+    font-size: 3rem;
+
+    margin-bottom: 2rem;
+}
+
+.card p{
+    color: var(--support-text);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+
+/*forms*/
+
+
+
+.input-wrapper form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2.4rem;
+
+    margin: 8rem 4rem 0 4rem;
+
+}
+
+.input-wrapper h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--primary-text);
+}
+
+.input-wrapper input, textarea{
+    width: 30rem;
+}
+
+.input-wrapper textarea{
+    border-radius: 1.6rem;
+    border: 1.5px solid var(--support-text);
+
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+
+}
+
+.input-wrapper input{
+   
+    border-radius: 1.6rem;
+    border: 1.5px solid var(--support-text);
+
+    padding: 1.2rem 1.6rem 1.2rem 5rem;
+}
+
+.input-wrapper textarea::placeholder{
+    color: var(--support-text);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.input-wrapper input::placeholder{
+    color: var(--support-text);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+label{
+    width: 1px;
+    height: 1px;
+
+    position: absolute;
+    overflow: hidden;
+}
+
+.name {
+    position: relative;
+}
+
+.person-icon{
+    position: absolute;
+
+    left: 1.2rem;
+    top: 20%;
+
+}
+
+.email{
+    position: relative;
+}
+
+.at-icon{
+    position: absolute;
+
+    left: 1.2rem;
+    top: 20%;
+}
+
+.submit input{
+    padding: 1.6rem;
+    
+    width: 15rem;
+
+    border: none;
+    background: var(--secundary-bg);
+
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/*vinheta*/
+
+.vignette{
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+/*footer*/
+
+footer{
+    background: var(--secundary-bg);
+
+    padding: 3.2rem 1rem;
+
+    margin-top: 6.5rem;
+}
+
+footer p{
+    color: var(--primary-bg);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/*responsividade*/
+
+@media (min-width: 1080px){
+
+    /*imagem e titulo*/
+
+    main{
+        margin: 0 10.9rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .main-image img{
+        width: 100%;
+        height: 70%;
+        
+    }
+
+    .title{
+        align-items: flex-start;
+        
+    }
+    
+    .title h1{
+        font-size: 5.8rem;
+        margin-top: 31.2rem;
+    }
+    
+    .title p{
+        font-size: 3.2rem;
+    }
+
+    .title img{
+        width: 6rem;
+        margin-top: 18rem;
+        margin-bottom: 13.6rem;
+    }
+
+    /*cards*/
+
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    /*form*/
+
+    .input-wrapper{
+        margin: 0 10.9rem;
+    }
+    
+    .input-wrapper form{
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .input-wrapper h1{
+        font-size: 4.2rem;
+        
+    }
+
+    .input-wrapper textarea{
+        width: 59.2rem;
+    }
+    
+    .input-wrapper input{
+        width: 59.2rem;
+    }
+
+    .submit input{   
+        width: 15.1rem;
+    }
+
+    /*vinheta*/
+    .vignette {
+        overflow: visible;
+        position: absolute;
+        right: 64.4rem;
+        bottom: -68.4rem;
+
+        
+        z-index: -999;
+    }
+}
+
+@media (max-width: 1024px){
+    .card{
+        width: 35.2rem;
+    }
+}
+
+@media (min-width: 1300px){
+    .vignette{
+        bottom: -54.6rem;
+    }
+}
+
+
+
+
+  
