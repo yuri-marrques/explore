@@ -216,7 +216,6 @@ label{
     height: 1px;
     width: 1px;
     overflow: hidden;
-    position: absolute;
 }
 
 /*footer*/
@@ -312,11 +311,11 @@ footer p{
     }
 
     /*vinheta*/
-    .vignette {
+        .vignette {
         overflow: visible;
         position: absolute;
         right: 64.4rem;
-        bottom: -150%;
+        bottom: -64.5rem;
 
         
         z-index: -999;
@@ -331,7 +330,19 @@ footer p{
 
 @media (min-width: 1300px){
     .vignette{
-        bottom: -58.5rem;
+        bottom: -60rem;
+    }
+}
+
+@media (min-width: 1357px){
+    .vignette{
+        bottom: -49.7rem;
+    }
+}
+
+@media (min-width: 1420px){
+    .vignette{
+        bottom: -32.6rem;
     }
 }
 
