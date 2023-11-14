@@ -237,6 +237,12 @@ footer p{
 
 /*responsividade*/
 
+@media (max-width: 1024px){
+    .card{
+        width: 35.2rem;
+    }
+}
+
 @media (min-width: 1080px){
 
     /*imagem e titulo*/
@@ -311,38 +317,19 @@ footer p{
     }
 
     /*vinheta*/
-           .vignette {
+    
+    footer{
+        position: relative;
+    }
+    
+    .vignette {
         overflow: visible;
         position: absolute;
         right: 64.4rem;
-        bottom: -68.5rem;
+        bottom: 64.4rem;
 
         
         z-index: -999;
-    }
-}
-
-@media (max-width: 1024px){
-    .card{
-        width: 35.2rem;
-    }
-}
-
-@media (min-width: 1300px){
-    .vignette{
-        bottom: -60rem;
-    }
-}
-
-@media (min-width: 1357px){
-    .vignette{
-        bottom: -100rem;
-    }
-}
-
-@media (min-width: 1420px){
-    .vignette{
-        bottom: -54.6rem;
     }
 }
 
