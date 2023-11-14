@@ -316,7 +316,7 @@ footer p{
         overflow: visible;
         position: absolute;
         right: 64.4rem;
-        bottom: -64.5rem;
+        bottom: -150%;
 
         
         z-index: -999;
