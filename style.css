@@ -316,7 +316,7 @@ footer p{
         overflow: visible;
         position: absolute;
         right: 64.4rem;
-        bottom: -68.4rem;
+        bottom: -64.5rem;
 
         
         z-index: -999;
@@ -331,7 +331,7 @@ footer p{
 
 @media (min-width: 1300px){
     .vignette{
-        bottom: -33rem;
+        bottom: -58.5rem;
     }
 }
 
